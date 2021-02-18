@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열</title>
+</head>
+
+<body>
+  <h3>배열 만들기</h3>
+  <script>
+    var student = ["홍길동", "김유신", "이순신"];
+    document.write(student + '<br>');
+  </script>
+
+  <h3>배열 인덱스</h3>
+  <script>
+    // document.write 화면에 출력하게해줌(html도포함)
+    document.write(student[0] + '<br>');
+    document.write(student[1] + '<br>');
+    document.write(student[2] + '<br>');
+  </script>
+
+
+  <h3>강감찬 추가(push), 문익점 추가(unshift)</h3>
+  <script>
+    student.push('강감찬');
+    document.write(student + '<br>');
+    student.unshift('문익점');
+    document.write(student + '<br>');
+    student.pop();
+    document.write(student + '<br>');
+    student.shift();
+    document.write(student + '<br>');
+  </script>
+</body>
+
+</html>

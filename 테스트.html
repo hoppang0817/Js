@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트</title>
+</head>
+
+<body>
+  <h1>자바스크립트 태그</h1>
+
+  <!-- 1.내부 자바스크립트태그에서 실행 -->
+  <script>
+    //alert - 메세지창에 문자열 표시
+    // alert('hi');
+    // 문자열을 화면에출력
+    document.write('화면에표시')
+    // html태그사용시 적용됨
+    document.write("<h1>화면에표시</h1>")
+  </script>
+
+  <!-- 2.외부 자바스크립트 불러오기 -->
+  <script src="test.js"></script>
+
+  <!--3. 태그에서 onclick속성 실행 -->
+  <!--  onclick속성값에는 자바스크립트가 실행됨-->
+  <!-- 버튼클릭시 '하이'출력 -->
+  <button onclick="alert('하이');">하이</button>
+
+  <!-- 화면에 출력되는게아닌 콘솔창에 출력됨(F12) -->
+  <script>
+    console.log('콘솔로그');
+    console.error('콘솔에러');
+    console.warn('콘솔워닝');
+  </script>
+
+  <!-- 버튼클릭시 콘솔창에 clicked 출력됨 -->
+  <button onclick="console.log('clicked')">HI</button>
+</body>
+
+</html>

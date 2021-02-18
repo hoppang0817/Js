@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조건문</title>
+</head>
+
+<body>
+  <script>
+    // var id = prompt('아이디를 입력해주세요.');
+    // if (id === 'pusanit') {
+    //   alert('아이디가 일치 합니다.');
+    // } else {
+    //   alert('아이디가 일치하지 않습니다.');
+    // }
+
+    // 예제
+    // var id = prompt('아이디를 입력해주세요');
+    // if (id == 'pusanit') {
+    //   var pw = prompt('비밀번호를 입력해주세요')
+    //   if (pw == 502) {
+    //     alert('인증에 성공했습니다')
+    //   } else {
+    //     alert('비밀번호를 확인해주세요')
+    //   }
+    // } else {
+    //   alert('아이디를 확인해주세요')
+    // }
+
+    // 예제2
+    // var id = prompt('아이디를 입력해주세요')
+    // var pw = prompt('비밀번호를 입력해주세요')
+    // if ((id == pusanit || id == busanit || id == fusanit) && (pw == 502)) {
+    //   alert('인증에 성공했습니다')
+    // } else {
+    //   alert('인증에 실패했습니다')
+    // }
+
+    //예제3
+    for (var i = 1; i <= 100; i++) {
+      // 공통의 배수먼저나와야함
+      // if문이 true 이면 다른 if문은 확인하지 않고 바로 출력됨
+
+      if (i % 15 == 0) {
+        console.log('삼삼오오')
+      }
+      else if (i % 3 == 0) {
+        console.log('삼삼')
+      } else if (i % 5 == 0) {
+        console.log('오오')
+      } else {
+        console.log(i)
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>
