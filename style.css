@@ -13,7 +13,7 @@ body {
 #main-page {
   background: url(img/bg.jpg) no-repeat bottom center ;
   background-size:cover;
-  height: 80vh;
+  height: 75vh;
 }
 
 
@@ -90,12 +90,231 @@ body {
    justify-content: space-around;
 }
 
-#main-page .center{
-  width: 316px;
-  height: 116px;
-}
-#main-page .center div{
-  color: white;
-  font-size: 48px;
+.main-navi .menu .item:nth-child(1) {
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px;
+  border-right: 50%;
+  outline: 0;
+  border: 0;
 }
 
+.main-navi .menu .item:nth-child(2){
+  background-color: white;
+  cursor: pointer;
+  border-right: 22px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px;
+  outline: 0;
+  border: 0;
+}
+
+.main-navi .menu .item:nth-child(3){
+  width: 80px;
+  height: 42px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 21px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 6px;
+  font-size: 20px;
+}
+
+#main-page .center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 75px;
+  padding-top: 20px;
+  width: 500px;
+  height: 300px;
+}
+
+#main-page .center div{
+  width: 318px;
+  height: 150px;
+  color: white;
+  font-size: 52px;
+  font-weight: 800;
+}
+
+#main-page .center button{
+width: 157px;
+height: 33px;
+background-color: #ffffff;
+border-radius:8px;
+margin-top: 20px;
+outline: none;
+border: 1px solid ;
+cursor: pointer;
+text-align: center;
+font-weight: 800;
+font-size: 14px;
+}
+
+.main-navi .menu .item:nth-child(3):hover{
+  box-shadow: rgba(0,0,0,0.15) 0px 2px 8px;
+}
+.main-navi .menu .item i {
+  padding: 5px;
+}
+
+.main-navi .menu .item:nth-child(1):hover {
+  background-color: #fafafa;
+}
+
+.main-navi .menu .item:nth-child(2):hover {
+  background-color: #fafafa;
+}
+#main-page .center button:hover{
+  background-color: #fafafa;
+}
+
+
+/* 첫번째 페이지 */
+.fist_sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin: 80px 80px;
+}
+.card_box {
+  display: grid;
+  grid-template-columns: 0.8fr 3fr;
+  width: 363px;
+  height: 64px;
+
+}
+.card_box .img_box1 {
+  background-image: url(img/img_box1.jpg) ;
+  background-size: 100% 100%;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.card_box .contens_box .contens_box_title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(34,34,34);
+  padding-top: 12px;
+}
+
+.card_box .contens_box div{
+  font-size: 16px;
+  color: #222222;
+}
+
+.card_box .img_box2 {
+  background-image: url(img/img_box2.jpg) ;
+  background-size: 100% 100%;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.card_box .img_box3 {
+  background-image: url(img/img_box3.jpg) ;
+  background-size: 100% 100%;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.card_box .img_box4 {
+  background-image: url(img/img_box4.jpg) ;
+  background-size: 100% 100%;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.card_box .img_box5 {
+  background-image: url(img/img_box5.jpg) ;
+  background-size: 100% 100%;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.card_box .img_box6 {
+  background-image: url(img/img_box6.jpg) ;
+  background-size: 100% 100%;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.card_box .img_box7 {
+  background-image: url(img/img_box7.jpg) ;
+  background-size: 100% 100%;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.card_box .img_box8 {
+  background-image: url(img/img_box8.jpg) ;
+  background-size: 100% 100%;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+.card_box:hover{
+  cursor: pointer;
+}
+
+/* 두번째페이지 */
+
+.second_sec {
+  display: grid;
+  grid-template-rows: 0.8fr 5fr;
+  margin: 80px;
+}
+.second_card_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.second_sec .mini_title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+
+.second_card_box .mini_card_box {
+  display: grid;
+  grid-template-rows: 5fr 0.5fr;
+  gap: 5px;
+  width: 368px;
+  height: 404px;
+}
+
+.second_card_box .mini_card_box .second_img_box1 {
+  background-image: url(img/mini_img_box1.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+}
+
+.second_card_box .mini_card_box .second_img_box2 {
+  background-image: url(img/mini_img_box2.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+}
+.second_card_box .mini_card_box .second_img_box3 {
+  background-image: url(img/mini_img_box3.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+}
+.second_card_box .mini_card_box .second_img_box4 {
+  background-image: url(img/mini_img_box4.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+}
