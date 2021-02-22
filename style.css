@@ -280,9 +280,10 @@ font-size: 14px;
 .second_card_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+
+
 }
-.second_sec .mini_title {
+.mini_title {
   font-size: 32px;
   font-weight: 700;
   line-height: 36px;
@@ -317,4 +318,136 @@ font-size: 14px;
   background-image: url(img/mini_img_box4.jpg);
   background-size: 100% 100%;
   border-radius: 12px;
+}
+.second_sec .second_card_box:hover{
+  cursor: pointer;
+}
+
+
+
+/* 세번째 페이지 */
+.third_sec {
+  display: grid;
+  grid-template-rows:0.8fr 5fr;
+  background-color: rgb(0,0,0);
+  color: white;
+  padding: 80px;
+  height: 740px;
+  justify-content: center;
+}
+
+.third_sec .third_card_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.third_sec .third_card_box .third_card {
+  display: grid;
+  grid-template-rows: 5fr 0.8fr;
+  width: 520px;
+  height: 584px;
+
+}
+
+.third_sec .third_card_box .third_img_box1 {
+  background-image: url(img/third_img_box1.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+}
+
+.third_sec .third_card_box .third_img_box2{
+  background-image: url(img/third_img_box2.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+}
+
+.third_sec .third_card_box .third_img_box3{
+  background-image: url(img/third_img_box3.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+}
+.third_sec .third_box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 1600px;
+  height: 657px;
+  gap: 20px;
+  
+}
+
+.third_contents {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 44px;
+}
+
+
+.third_card:hover{
+  cursor: pointer;
+}
+
+
+/* 네번째 페이지 */
+.card_title{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  max-height: 44px;
+  padding-top: 10px;
+}
+
+.fourth_sec {
+  margin: 80px;
+  display: grid;
+  justify-content: center;
+}
+
+.fourth_box{
+  display: grid;
+  grid-template-rows: 0.8fr 5fr;
+  gap: 20px;
+  width: 1600px;
+  height: 440px;
+}
+.fourth_card_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.fourth_card {
+  display: grid;
+  grid-template-rows: 5fr 0.8fr;
+  width: 536px;
+  height: 389px;
+}
+
+.fourth_img_box1 {
+  background-image: url(img/fourth_img_box1.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+  width: 520px;
+  height: 347px;
+}
+
+.fourth_img_box2 {
+  background-image: url(img/fourth_img_box2.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+  width: 520px;
+  height: 347px;
+}
+
+.fourth_img_box3 {
+  background-image: url(img/fourth_img_box3.jpg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+  width: 520px;
+  height: 347px;
+}
+
+.fourth_card:hover {
+  cursor: pointer;
 }
