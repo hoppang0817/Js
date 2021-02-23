@@ -1,4 +1,11 @@
+/* sec->box->card_box->tilte ,img,contents */
 /* 초기화 */
+/* 
+@media only screen and (max-width:768px){
+  .main-navi {
+  
+  }
+} */
 * { 
   margin: 0;
   padding: 0;
@@ -124,14 +131,15 @@ body {
   font-size: 20px;
 }
 
+
+
 #main-page .center{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 75px;
-  padding-top: 20px;
-  width: 500px;
-  height: 300px;
+  justify-content: flex-end;
+  padding-left: 190px;
+  width: 570px;
+  height: 430px;
 }
 
 #main-page .center div{
@@ -177,11 +185,19 @@ font-size: 14px;
 
 /* 첫번째 페이지 */
 .fist_sec {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 80px;
+}
+.fist_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
-  margin: 80px 80px;
+  width: 1600px;
+  height: 144px;
 }
 .card_box {
   display: grid;
@@ -273,14 +289,22 @@ font-size: 14px;
 /* 두번째페이지 */
 
 .second_sec {
-  display: grid;
-  grid-template-rows: 0.8fr 5fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 80px;
+  height: 576px;
+}
+
+.test {
+  display: grid;
+  grid-template-rows: 0.7fr 5fr;
+
 }
 .second_card_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
+  gap: 10px;
 
 }
 .mini_title {
@@ -289,13 +313,12 @@ font-size: 14px;
   line-height: 36px;
 }
 
-
 .second_card_box .mini_card_box {
   display: grid;
   grid-template-rows: 5fr 0.5fr;
   gap: 5px;
-  width: 368px;
-  height: 404px;
+  width: 386px;
+  height: 415px;
 }
 
 .second_card_box .mini_card_box .second_img_box1 {
@@ -451,4 +474,91 @@ font-size: 14px;
 .fourth_card:hover {
   cursor: pointer;
 }
+
+/* 마지막 */
+footer {
+  background-color:#f7f7f7;
+  border-top: 1px solid #dddddd;
+  padding: 80px;
+}
+
+table {
+  width: 95%;
+  height: 400px;
+  text-align: left;
+  font-size: 14px;
+  color: #484848;
+  line-height: 1.43;
+  margin-left: 90px;
+  border-bottom: 1px solid #dddddd;
+}
+
+table tr td:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #5c5b5b;
+}
+
+.last_footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  width: 1635px;
+  height: 69px;
+  margin-left: 90px;
+
+}
+.last_footer div {
+  color: #222222;
+  font-size: 14px;
+}
+
+.last_footer div .here:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.icons div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button{
+  background-color: #f7f7f7f7;
+  border: 0;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #222222;
+  font-weight: 600;
+  line-height: 18px
+}
+
+.button:hover{
+  cursor: pointer;
+  color: #3b3b3b;
+
+}
+
+
+.icons .items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.items i {
+  width: 18px;
+  height: 18px;
+}
+
+.items i:hover{
+  cursor: pointer;
+}
+
+
+
 
