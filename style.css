@@ -71,7 +71,9 @@ body {
   border: 1px solid #ddd;
   outline: none;
   font-weight: 700;
+  text-decoration: none;
 }
+
 
 
 .main-navi .search .button .rbutton {
@@ -100,23 +102,25 @@ body {
 .main-navi .menu .item:nth-child(1) {
   background-color: white;
   cursor: pointer;
+  width: 100px;
+  height: 42px;
   font-size: 14px;
   font-weight: 600;
-  padding: 15px;
-  border-right: 50%;
-  outline: 0;
+  outline: none;
   border: 0;
+  border-radius: 21px;
 }
 
 .main-navi .menu .item:nth-child(2){
   background-color: white;
   cursor: pointer;
-  border-right: 22px;
+  width: 50px;
+  height: 40px;
   font-size: 14px;
   font-weight: 600;
-  padding: 15px;
   outline: 0;
   border: 0;
+  border-radius: 15px;
 }
 
 .main-navi .menu .item:nth-child(3){
@@ -127,10 +131,9 @@ body {
   border-radius: 21px;
   cursor: pointer;
   outline: none;
-  margin-top: 6px;
   font-size: 20px;
+  color: rgb(114, 113, 113);
 }
-
 
 
 #main-page .center{
@@ -157,7 +160,7 @@ background-color: #ffffff;
 border-radius:8px;
 margin-top: 20px;
 outline: none;
-border: 1px solid ;
+border:none ;
 cursor: pointer;
 text-align: center;
 font-weight: 800;
@@ -172,14 +175,14 @@ font-size: 14px;
 }
 
 .main-navi .menu .item:nth-child(1):hover {
-  background-color: #fafafa;
+  background: rgb(247, 247, 247)
 }
 
 .main-navi .menu .item:nth-child(2):hover {
-  background-color: #fafafa;
+  background: rgb(247, 247, 247)
 }
 #main-page .center button:hover{
-  background-color: #fafafa;
+  background-color: #ebe7e7;
 }
 
 
@@ -296,7 +299,7 @@ font-size: 14px;
   height: 576px;
 }
 
-.test {
+.second_box {
   display: grid;
   grid-template-rows: 0.7fr 5fr;
 
@@ -309,7 +312,7 @@ font-size: 14px;
 }
 .mini_title {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 36px;
 }
 
@@ -531,17 +534,18 @@ table tr td:hover{
 .button{
   background-color: #f7f7f7f7;
   border: 0;
+  outline: 0;
   font-size: 14px;
   text-decoration: underline;
   color: #222222;
   font-weight: 600;
   line-height: 18px
+  
 }
 
 .button:hover{
   cursor: pointer;
   color: #3b3b3b;
-
 }
 
 
@@ -557,6 +561,7 @@ table tr td:hover{
 
 .items i:hover{
   cursor: pointer;
+  color: #3b3b3b;
 }
 
 
