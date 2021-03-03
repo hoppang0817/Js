@@ -1,11 +1,5 @@
 /* sec->box->card_box->tilte ,img,contents */
 /* 초기화 */
-/* 
-@media only screen and (max-width:768px){
-  .main-navi {
-  
-  }
-} */
 * { 
   margin: 0;
   padding: 0;
@@ -82,7 +76,7 @@ body {
    background-color: #ff385c;
    color: white;
    border-radius: 50%;
-   padding: 10px;
+   padding: 5px 7px;
 }
 
 
@@ -188,9 +182,9 @@ font-size: 14px;
 }
 
 
-/* 첫번째 페이지 */
-.fist_sec {
- 
+/* 찻번째 페이지 */
+#fist_sec {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,70 +287,48 @@ font-size: 14px;
 
 /* 두번째페이지 */
 
-.second_sec {
+#second_sec {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 80px;
   height: 576px;
+  
 }
 
-.second_box {
-  display: grid;
-  grid-template-rows: 0.7fr 5fr;
-
-}
 .second_card_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-
+  padding-top: 15px;
 }
 .mini_title {
   font-size: 32px;
   font-weight: 800;
   line-height: 36px;
+  /* padding-bottom: 20px; */
 }
 
 .second_card_box .mini_card_box {
-  display: grid;
-  grid-template-rows: 5fr 0.5fr;
-  gap: 5px;
   width: 386px;
   height: 415px;
 }
 
-.second_card_box .mini_card_box .second_img_box1 {
-  background-image: url(img/mini_img_box1.jpg);
-  background-size: 100% 100%;
+#second_sec .mini_card_box img{
   border-radius: 12px;
 }
 
-.second_card_box .mini_card_box .second_img_box2 {
-  background-image: url(img/mini_img_box2.jpg);
-  background-size: 100% 100%;
-  border-radius: 12px;
-}
-.second_card_box .mini_card_box .second_img_box3 {
-  background-image: url(img/mini_img_box3.jpg);
-  background-size: 100% 100%;
-  border-radius: 12px;
-}
-.second_card_box .mini_card_box .second_img_box4 {
-  background-image: url(img/mini_img_box4.jpg);
-  background-size: 100% 100%;
-  border-radius: 12px;
-}
-.second_sec .second_card_box:hover{
+#second_sec .second_box .second_card_box:hover{
   cursor: pointer;
 }
 
 
 
 /* 세번째 페이지 */
-.third_sec {
-  display: grid;
-  grid-template-rows:0.8fr 5fr;
+#third_sec {
+  /* display: grid;
+  grid-template-rows:0.8fr 5fr; */
+  display: flex;
   background-color: rgb(0,0,0);
   color: white;
   padding: 80px;
@@ -364,13 +336,13 @@ font-size: 14px;
   justify-content: center;
 }
 
-.third_sec .third_card_box {
+#third_sec .third_card_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
 
-.third_sec .third_card_box .third_card {
+#third_sec .third_card_box .third_card {
   display: grid;
   grid-template-rows: 5fr 0.8fr;
   width: 520px;
@@ -378,30 +350,34 @@ font-size: 14px;
 
 }
 
-.third_sec .third_card_box .third_img_box1 {
+#third_sec .ps {
+  padding-bottom: 20px;
+}
+
+#third_sec .third_card_box .third_img_box1 {
   background-image: url(img/third_img_box1.jpg);
   background-size: 100% 100%;
   border-radius: 12px;
 }
 
-.third_sec .third_card_box .third_img_box2{
+#third_sec .third_card_box .third_img_box2{
   background-image: url(img/third_img_box2.jpg);
   background-size: 100% 100%;
   border-radius: 12px;
 }
 
-.third_sec .third_card_box .third_img_box3{
+#third_sec .third_card_box .third_img_box3{
   background-image: url(img/third_img_box3.jpg);
   background-size: 100% 100%;
   border-radius: 12px;
 }
-.third_sec .third_box {
-  display: grid;
-  justify-content: center;
-  align-items: center;
+#third_sec .third_box {
+  /* display: grid; */
+  /* justify-content: center;
+  align-items: center; */
   width: 1600px;
   height: 657px;
-  gap: 20px;
+  /* gap: 20px; */
   
 }
 
@@ -426,9 +402,9 @@ font-size: 14px;
   padding-top: 10px;
 }
 
-.fourth_sec {
+#fourth_sec {
   margin: 80px;
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 
